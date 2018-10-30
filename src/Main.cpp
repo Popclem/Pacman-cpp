@@ -6,14 +6,24 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
+
 #include <iostream>
+#include <windows.h>
 #include <SDL.h>
 
+#include "Pacman.h"
+#include "ActionController.h"
+using namespace std;
+
+
 int main(int argc, char* argv[]) {
-    // Start SDL2
+
+	Pacman petitPacman(6,6);
+	ActionController action(petitPacman);
+
+
     SDL_Init(SDL_INIT_EVERYTHING);
 
-    // Create a Window in the middle of the screen
     SDL_Window *window = 0;
 
     window = SDL_CreateWindow("Hello World!",
@@ -22,10 +32,9 @@ int main(int argc, char* argv[]) {
                               640, 480,
                               SDL_WINDOW_SHOWN);
 
-    // Delay so that we can see the window appear
-    SDL_Delay(2000);
+	action.mouvement();
 
-    // Cleanup and Quit
+
     SDL_DestroyWindow(window);
     SDL_Quit();
 
