@@ -6,7 +6,11 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
+<<<<<<< HEAD
 
+=======
+//Commit test RD
+>>>>>>> 3b5c6eee964a448757252c92314e610a0f7257c6
 #include <iostream>
 #include <windows.h>
 #include <SDL.h>
