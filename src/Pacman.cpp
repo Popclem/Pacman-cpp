@@ -37,19 +37,27 @@ using namespace std;
 
 
 	 void Pacman::goUp(){
-		 image = "src/images/PacmanUp.PNG";
-		 this-> y = y+1;
+		// if(y + 1 < getYMap){
+			this-> y = y+1;
+			 image = "images/PacmanUp.png";
+		 //}
 	 }
 	 void Pacman::goDown(){
-		 image = "src/images/PacmanDown.PNG";
-		 this-> y = y-1;
+		// if(y - 1 < getYMap){
+			this-> y = y-1;
+			 image = "images/PacmanDown.png";
+		// }
 	 }
 	 void Pacman::goLeft(){
-		 image = "src/images/PacmanLeft.PNG";
-		 this-> x = x-1;
+		 //if(x - 1 < getYMap){
+			this-> x = x-1;
+			 image = "images/PacmanLeft.png";
+		// }
 	 }
 	 void Pacman::goRight(){
-		 image = "src/images/PacmanRight.PNG";
-		 this-> x = x+1;
+		 //if(x - 1 < getYMap){
+			this-> x = x-1;
+			 image = "images/PacmanRight.png";
+		 //}
 	 }
 
